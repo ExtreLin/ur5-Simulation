@@ -23,6 +23,7 @@ private:
     moveit_msgs::CollisionObject createBox(const Eigen::Vector3f& lwh,const Eigen::Vector3f& boxPose);
     moveit::planning_interface::MoveGroupInterface* group;
     ros::Publisher collision_object_publisher;
+    ros::Publisher planning_scene_diff_publisher;
     int  boxNum;
 };
 
